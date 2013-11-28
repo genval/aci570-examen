@@ -33,6 +33,47 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-  public $components = array('DebugKit.Toolbar', 'Session');
+  public $components = array(
+    'DebugKit.Toolbar', 
+    'Session',
+    'Auth' => array(
+      'authenticate' => array(
+        'Form' => array(
+          'userModel' => 'User',
+          'fields' => array('username' => 'email')
+        ),
+      ),
+      'passwordHasher' => array(
+        'className' => 'Simple',
+        'hashType' => 'sha256'
+      ),
+      'loginAction' => array(
+        'controller' => 'users',
+        'action' => 'login'
+      ),
+      'loginRedirect' => array(
+        'controller' => 'home', 
+        'action' => 'index'
+      ),
+      'logoutRedirect' => array(
+        'controller' => 'home', 
+        'action' => 'index'
+      ),
+      'unauthorizedRedirect' => false,
+      'authorize' => 'controller'
+    )
+  );
+
+  function beforeFilter() {
+  }
+
+  function isAuthorized() {
+    if (!empty($this->params['prefix']) && $this->params['prefix'] == 'admin') {
+      if (!$this->Auth->user('is_admin')) {
+        return false;
+      }
+    }
+    return true;
+  }
   
 }

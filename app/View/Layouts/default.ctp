@@ -31,6 +31,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('app');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -40,11 +41,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<strong><?php echo $this->Html->link("My CakePHP Application", ''); ?></strong>
+			<div class="right padding-right-10">
+				<?php if(AuthComponent::user('id')): ?>
+					<?php echo $this->Html->link(__('Profile'), array('controller' => 'users', 'action' => 'profile')); ?> |
+			  	<?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?>
+			  <?php else: ?>
+			  	<?php echo $this->Html->link(__('Sign in'), array('controller' => 'users', 'action' => 'login')); ?> | 
+			    <?php echo $this->Html->link(__('Sign up'), array('controller' => 'users', 'action' => 'register')); ?>
+			  <?php endif; ?>
+			</div>
 		</div>
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->Session->flash('auth'); ?>
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
