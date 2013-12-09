@@ -7,6 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class HomeController extends AppController {
+	var $uses = array ('Project','Category');
 
 /**
  * Components
@@ -21,7 +22,18 @@ class HomeController extends AppController {
   }
 
   public function index() {
-    
+   $conditions = array('catery.is_active' =>1);
+   $category = $this->Category->find('all',array(
+		'conditions'=>$conditions,
+		'recursive'=>1,
+		'fields'=> array('Category.id','Category.name')
+	));
+	$this->set('categories',$categories);
+	//$categories = $this->Category->findByName('Food');
+	//echo '<pre>'.print_r($categories,true).'</pre>';
+//die();
   }
 
+  public function admin_index(){
+   $this->set('foo','bar');
 }
