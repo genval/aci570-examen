@@ -5,12 +5,12 @@
 <?php endif; ?>
 
 <?php foreach ($categories as $category): ?>
-	<?php echo $category ['category']['name'];?>
-	<?php foreach ($category ['Project'] as $proyect): ?>
+	<?php echo $category ['Category']['name'];?>
+	<?php foreach ($category ['Project'] as $project): ?>
 	<ul>
 		<li>
 		 <?php echo $project['name']; ?>
 		</li>
 	</ul>
    <?php endforeach; ?>
-  <?php endforach; ?>
+  <?php endforeach; ?>
