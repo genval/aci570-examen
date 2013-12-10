@@ -22,7 +22,7 @@ class HomeController extends AppController {
   }
 
   public function index() {
-   $conditions = array('catery.is_active' =>1);
+   $conditions = array('Category.is_active' =>1);
    $category = $this->Category->find('all',array(
 		'conditions'=>$conditions,
 		'recursive'=>1,
@@ -36,4 +36,5 @@ class HomeController extends AppController {
 
   public function admin_index(){
    $this->set('foo','bar');
+  }
 }
