@@ -31,7 +31,7 @@ class HomeController extends AppController {
 	$this->set('categories',$categories);
 	//$categories = $this->Category->findByName('Food');
 	//echo '<pre>'.print_r($categories,true).'</pre>';
-//die();
+  //die();
   }
 
   public function admin_index(){
