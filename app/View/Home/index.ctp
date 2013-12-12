@@ -3,8 +3,9 @@
 <?php else: ?>
   <h1>You are not logged in</h1>
 <?php endif; ?>
+<?php $this->set('category', $category); ?>
 
-<?php foreach ($categories as $category): ?>
+<?php foreach ($category as $category): ?>
 	<?php echo $category ['Category']['name'];?>
 	<?php foreach ($category ['Project'] as $project): ?>
 	<ul>
