@@ -28,7 +28,7 @@ class HomeController extends AppController {
 		'recursive'=>1,
 		'fields'=> array('Category.id','Category.name')
 	));
-	 $this->set('categories', $categories);
+	 $this->set('category', $category);
 	//$categories = $this->Category->findByName('Food');
 	//echo '<pre>'.print_r($categories,true).'</pre>';
   //die();

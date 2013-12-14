@@ -1,1 +1,1 @@
-Admin <?php echo $foo ?>
+Admin <?php echo $foo?>
