@@ -25,12 +25,12 @@ class HomeController extends AppController {
    $conditions = array('Category.is_active' =>1);
    $category = $this->Category->find('all',array(
 		'conditions'=>$conditions,
-		'recursive'=>1,
+		'recursive'=>2,
 		'fields'=> array('Category.id','Category.name')
 	));
 	 $this->set('category', $category);
 	//$categories = $this->Category->findByName('Food');
-	//echo '<pre>'.print_r($categories,true).'</pre>';
+	//echo '<pre>'.print_r($category,true).'</pre>';
   //die();
   }
 
