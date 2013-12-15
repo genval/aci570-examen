@@ -1,10 +1,7 @@
 <div class="categories view">
 <h2><?php echo __('Category'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($category['Category']['id']); ?>
-			&nbsp;
+		
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
 		<dd>
@@ -21,11 +18,7 @@
 			<?php echo h($category['Category']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($category['Category']['modified']); ?>
-			&nbsp;
-		</dd>
+		
 	</dl>
 </div>
 <div class="actions">
@@ -45,27 +38,26 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Category Id'); ?></th>
+		
 		<th><?php echo __('User Id'); ?></th>
 		<th><?php echo __('Name'); ?></th>
 		<th><?php echo __('Short Description'); ?></th>
-		<th><?php echo __('Long Description'); ?></th>
+		
 		<th><?php echo __('Start Date'); ?></th>
 		<th><?php echo __('End Date'); ?></th>
 		<th><?php echo __('Goal'); ?></th>
 		<th><?php echo __('Is Active'); ?></th>
 		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($category['Project'] as $project): ?>
 		<tr>
 			<td><?php echo $project['id']; ?></td>
-			<td><?php echo $project['category_id']; ?></td>
+			
 			<td><?php echo $project['user_id']; ?></td>
 			<td><?php echo $project['name']; ?></td>
 			<td><?php echo $project['short_description']; ?></td>
-			<td><?php echo $project['long_description']; ?></td>
+			
 			<td><?php echo $project['start_date']; ?></td>
 			<td><?php echo $project['end_date']; ?></td>
 			<td><?php echo $project['goal']; ?></td>
@@ -73,10 +65,8 @@
 			<td><?php echo $project['created']; ?></td>
 			<td><?php echo $project['modified']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'projects', 'action' => 'view', $project['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'projects', 'action' => 'edit', $project['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'projects', 'action' => 'delete', $project['id']), null, __('Are you sure you want to delete # %s?', $project['id'])); ?>
-			</td>
+				<?php echo $this->Html->link(__('ver poyecto'), array('controller' => 'projects', 'action' => 'view', $project['id'])); ?>
+							</td>
 		</tr>
 	<?php endforeach; ?>
 	</table>
@@ -84,7 +74,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Project'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
+			
 		</ul>
 	</div>
 </div>
