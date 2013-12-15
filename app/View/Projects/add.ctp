@@ -11,7 +11,7 @@
 		echo $this->Form->input('start_date');
 		echo $this->Form->input('end_date');
 		echo $this->Form->input('goal');
-		echo $this->Form->input('is_active');
+		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
