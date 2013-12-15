@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class ProjectsController extends AppController {
-<?php $this->set('project', $project); ?>
+ 
 /**
  * Components
  *

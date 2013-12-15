@@ -1,55 +1,47 @@
 <div class="users view">
-<h2><?php echo __('User'); ?></h2>
+<h2><?php echo __('Usuario'); ?></h2>
 	<dl>
 		<dt><?php echo __('Email'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('First Name'); ?></dt>
+		<dt><?php echo __('nombres'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['first_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Last Name'); ?></dt>
+		<dt><?php echo __('apellidos'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['last_name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Is Active'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['is_active']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Is Admin'); ?></dt>
+		
+		<dt><?php echo __('privilegios de administracio'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['is_admin']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('creado'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['modified']); ?>
-			&nbsp;
-		</dd>
+		
 	</dl>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+<div class="acciones">
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit User'), array('action' => 'edit')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Contributions'), array('controller' => 'contributions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Notifications'), array('controller' => 'notifications', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Projects'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Project'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar perfil'), array('action' => 'edit')); ?> </li>
+		<li><?php echo $this->Html->link(__('Contribuciones'), array('controller' => 'contributions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Notificaciones'), array('controller' => 'notifications', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Proyectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('nuevo Proyecto'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Contributions'); ?></h3>
+	<h3><?php echo __('contribuciones'); ?></h3>
 	<?php if (!empty($user['Contribution'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
@@ -81,7 +73,7 @@
 </div>
 
 <div class="related">
-	<h3><?php echo __('Related Notifications'); ?></h3>
+	<h3><?php echo __('Notificaciones'); ?></h3>
 	<?php if (!empty($user['Notification'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
@@ -113,7 +105,7 @@
 </div>
 
 <div class="related">
-	<h3><?php echo __('Related Projects'); ?></h3>
+	<h3><?php echo __('Proyectos realizados'); ?></h3>
 	<?php if (!empty($user['Project'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
@@ -157,7 +149,7 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Project'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
+			
 		</ul>
 	</div>
 </div>
