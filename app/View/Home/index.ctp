@@ -4,7 +4,7 @@
   <h1>You are not logged in</h1>
 <?php endif; ?>
 <?php $this->set('category', $category); ?>
-<?php $this->set('project', $project); ?>
+
 
 <?php foreach ($category as $category): ?>
 	
