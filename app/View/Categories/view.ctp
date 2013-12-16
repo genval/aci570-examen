@@ -1,19 +1,19 @@
 <div class="categories view">
-<h2><?php echo __('Category'); ?></h2>
+<h2><?php echo __('Categoria'); ?></h2>
 	<dl>
 		
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('nombre'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Is Active'); ?></dt>
+		<dt><?php echo __('activo'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['is_active']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('Creado'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['created']); ?>
 			&nbsp;
@@ -22,15 +22,14 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Category'), array('action' => 'edit', $category['Category']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Category'), array('action' => 'delete', $category['Category']['id']), null, __('Are you sure you want to delete # %s?', $category['Category']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Category'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Projects'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Project'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
-	</ul>
+		<li><?php echo $this->Html->link(__('Editar categoria'), array('action' => 'edit', $category['Category']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('borrar Categoria'), array('action' => 'delete', $category['Category']['id']), null, __('Are you sure you want to delete # %s?', $category['Category']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Categorias'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('nueva Category'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Projectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
+		
 </div>
 <div class="related">
 	<h3><?php echo __('Related Projects'); ?></h3>
