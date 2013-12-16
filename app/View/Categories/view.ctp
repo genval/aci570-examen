@@ -3,17 +3,17 @@
 	<dl>
 		
 		</dd>
-		<dt><?php echo __('nombre'); ?></dt>
+		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('activo'); ?></dt>
+		<dt><?php echo __('Activo'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['is_active']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Creado'); ?></dt>
+		<dt><?php echo __('Crear'); ?></dt>
 		<dd>
 			<?php echo h($category['Category']['created']); ?>
 			&nbsp;
@@ -24,10 +24,10 @@
 <div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Editar categoria'), array('action' => 'edit', $category['Category']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('borrar Categoria'), array('action' => 'delete', $category['Category']['id']), null, __('Are you sure you want to delete # %s?', $category['Category']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Categoria'), array('action' => 'edit', $category['Category']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar Categoria'), array('action' => 'delete', $category['Category']['id']), null, __('Are you sure you want to delete # %s?', $category['Category']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('Categorias'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('nueva Category'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Category'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('Projectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
 		
 </div>

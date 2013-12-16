@@ -7,7 +7,7 @@
                 <td>
                 
                 <?php
-                echo $this->Paginator->sort('nombre: '); 
+                echo $this->Paginator->sort('Nombre: '); 
                  echo $this->Html->link(
                         h($category['Category']['name']),
                         
@@ -35,9 +35,9 @@
 	?>	</p>
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('anterior'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' . __('Anterior'), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('siguiente') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next(__('Siguiente') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>
@@ -46,7 +46,7 @@
 
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Lista de proyectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Nuevo proyecto'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista de Proyectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Proyecto'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

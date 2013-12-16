@@ -1,13 +1,13 @@
 <div class="categories form">
 <?php echo $this->Form->create('Category'); ?>
 	<fieldset>
-		<legend><?php echo __('Admin Add Category'); ?></legend>
+		<legend><?php echo __('agregar Categoria solo admin'); ?></legend>
 	<?php
-		echo $this->Form->input('escriba el nombre');
+		echo $this->Form->input('Escriba el nombre');
 		
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('enviar')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('acciones'); ?></h3>
