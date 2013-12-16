@@ -7,8 +7,6 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class CategoriesController extends AppController {
-	
-	
 
 /**
  * Components

@@ -1,4 +1,4 @@
-<!--<div class="users form">
+<div class="users form">
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
@@ -8,8 +8,10 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
-</div>-->
-	<form class="form-horizontal">
+</div>
+	<!--<form class="form-horizontal">
+		<?php echo $this->Session->flash('auth'); ?>
+		<?php echo $this->Form->create('User'); ?>
 	  <div class="control-group">
 	    <label class="control-label" for="inputEmail">Email</label>
 	    <div class="controls">
@@ -24,10 +26,10 @@
 	  </div>
 	  <div class="control-group">
 	    <div class="controls">
-	      <label class="checkbox">
+	      <!--<label class="checkbox">
 	        <input type="checkbox"> Remember me
 	      </label>
 	      <button type="submit" class="btn">Sign in</button>
 	    </div>
 	  </div>
-	</form>
+	</form>-->

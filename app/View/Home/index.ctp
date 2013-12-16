@@ -3,7 +3,7 @@
 <?php else: ?>
   <h1>You are not logged in</h1>
 <?php endif; ?>
-<?php $this->set('category', $category); ?>
+
 
 <?php foreach ($category as $category): ?>
 	
@@ -17,14 +17,14 @@
                                 $category['Category']['id']
                         )
                 ); ?>
-	<?php foreach ($category ['Project'] as $project): ?>
+	<?php foreach ($category ['Project'] as $project): ?> 
 	<?php
                  
                  echo $this->Html->link(
-                        h($project['Category']['project']['name']),
+                        h($project['Category']['Project']['name']),
                         
                         array(
-                                'controller' => 'project', 'action' => 'view',
+                                'controller' => 'projects', 'action' => 'view', 
                                 $project['Project']['id']
                         )
                 ); ?>	
