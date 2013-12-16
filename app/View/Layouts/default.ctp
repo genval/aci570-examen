@@ -41,7 +41,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="container">
 		<div id="header">
-			<strong><?php echo $this->Html->link("My CakePHP Application", ''); ?></strong>
+			<strong><?php echo $this->Html->link("Examen", ''); ?></strong>
 			<div class="right padding-right-10">
 				<?php if(AuthComponent::user('id')): ?>
 					<?php echo $this->Html->link(__('Profile'), array('controller' => 'users', 'action' => 'profile')); ?> |
