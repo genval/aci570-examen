@@ -8,16 +8,14 @@
 		echo $this->Form->input('viewed');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Enviar')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+<div class="acciones">
+	<h3><?php echo __('acciones'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Notifications'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Messages'), array('controller' => 'messages', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Message'), array('controller' => 'messages', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista de notificaciones'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista de mensajes'), array('controller' => 'messages', 'action' => 'index')); ?> </li>
+		
 	</ul>
 </div>
