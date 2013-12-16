@@ -17,8 +17,8 @@
                         )
                 ); 
                
-                 echo $this->Paginator->sort(' activo: ');
-                echo h($category['Category']['is_active']); ?>
+                 //echo $this->Paginator->sort(' activo: ');
+                //echo h($category['Category']['is_active']); ?>
                 </td>
                 
         </tr>
@@ -47,6 +47,6 @@
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Lista de proyectos'), array('controller' => 'projects', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('nuevo proyecto'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo proyecto'), array('controller' => 'projects', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
