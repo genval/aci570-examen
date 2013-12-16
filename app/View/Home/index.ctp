@@ -17,6 +17,7 @@
                                 $category['Category']['id']
                         )
                 ); ?>
+<li>                
 	<?php foreach ($category ['Project'] as $project): ?> 
 	<?php
                  
@@ -27,11 +28,6 @@
                                 'controller' => 'projects', 'action' => 'view', 
                                 $project['id']
                         )
-                ); ?>	
-	<ul>
-		<li>
-		 <?php echo $project['name']; ?>
-		</li>
-	</ul>
+                ); ?>	</li>
    <?php endforeach; ?>
   <?php endforeach; ?>
