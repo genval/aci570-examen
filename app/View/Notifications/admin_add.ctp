@@ -10,12 +10,12 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Enviar')); ?>
 </div>
-<div class="acciones">
-	<h3><?php echo __('acciones'); ?></h3>
+<div class="actions">
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('Lista de notificaciones'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('Lista de mensajes'), array('controller' => 'messages', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista de Notificaciones'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista de Mensajes'), array('controller' => 'messages', 'action' => 'index')); ?> </li>
 		
 	</ul>
 </div>

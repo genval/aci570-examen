@@ -46,10 +46,10 @@
 <div class="acciones">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('nueva notificacion'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Nueva notificacion'), array('action' => 'add')); ?></li>
 		<!--<li><?php echo $this->Html->link(__('List Messages'), array('controller' => 'messages', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Message'), array('controller' => 'messages', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>-->
+		<li><?php echo $this->Html->link(__('Nuevo Mensaje'), array('controller' => 'messages', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Usuarios'), array('controller' => 'users', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Usuario'), array('controller' => 'users', 'action' => 'add')); ?> </li>-->
 	</ul>
 </div>
