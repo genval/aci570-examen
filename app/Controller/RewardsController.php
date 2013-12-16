@@ -14,6 +14,11 @@ class RewardsController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+     public function beforeFilter() {   
+    	parent::beforeFilter();
+		$this->Auth->allow('index', 'view');
+	}
+
 
 /**
  * index method
