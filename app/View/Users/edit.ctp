@@ -12,7 +12,7 @@
 	</fieldset>
 <?php echo $this->Form->end(__('modificar')); ?>
 </div>
-<div class="acciones">
+<div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Lista de Contribuciones'), array('controller' => 'contributions', 'action' => 'index')); ?> </li>

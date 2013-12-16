@@ -51,7 +51,7 @@
 	?>
 	</div>
 </div>
-<div class="acciones">
+<div class="actions">
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Nuevo proyecto'), array('action' => 'add')); ?></li>
