@@ -5,7 +5,6 @@
 <?php endif; ?>
 <?php $this->set('category', $category); ?>
 
-
 <?php foreach ($category as $category): ?>
 	
 	<?php
