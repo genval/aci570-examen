@@ -7,37 +7,37 @@
 			<?php echo $this->Html->link($project['Category']['name'], array('controller' => 'categories', 'action' => 'view', $project['Category']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('usuario'); ?></dt>
+		<dt><?php echo __('Usuario'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($project['User']['email'], array('controller' => 'users', 'action' => 'view', $project['User']['id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('nombre'); ?></dt>
+		<dt><?php echo __('Nombre'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['name']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('descripcion corta'); ?></dt>
+		<dt><?php echo __('Descripcion corta'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['short_description']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('descripcion larga'); ?></dt>
+		<dt><?php echo __('Descripcion larga'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['long_description']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('inicio'); ?></dt>
+		<dt><?php echo __('Inicio'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['start_date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('termino'); ?></dt>
+		<dt><?php echo __('Termino'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['end_date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('meta'); ?></dt>
+		<dt><?php echo __('Meta'); ?></dt>
 		<dd>
 			<?php echo h($project['Project']['goal']); ?>
 			&nbsp;

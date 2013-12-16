@@ -19,8 +19,8 @@
 	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Projects'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Reward'), array('controller' => 'rewards', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Lista Proyectos'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Categorias'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo premio'), array('controller' => 'rewards', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

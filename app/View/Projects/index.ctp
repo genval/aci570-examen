@@ -32,8 +32,8 @@
 		<td><?php echo h($project['Project']['created']); ?>&nbsp;</td>
 		<td><?php echo h($project['Project']['modified']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $project['Project']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $project['Project']['id'])); ?>
+			<?php echo $this->Html->link(__('ver'), array('action' => 'view', $project['Project']['id'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $project['Project']['id'])); ?>
 			</td>
 	</tr>
 <?php endforeach; ?>
@@ -45,9 +45,9 @@
 	?>	</p>
 	<div class="paging">
 	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->prev('< ' . __('anterior'), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->next(__('siguiente') . ' >', array(), null, array('class' => 'next disabled'));
 	?>
 	</div>
 </div>

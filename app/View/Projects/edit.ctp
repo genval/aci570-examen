@@ -1,7 +1,7 @@
 <div class="projects form">
 <?php echo $this->Form->create('Project'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Project'); ?></legend>
+		<legend><?php echo __('Editar Proyecto'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('category_id');
@@ -15,7 +15,7 @@
 		echo $this->Form->input('is_active');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('enviar')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
