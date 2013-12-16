@@ -21,11 +21,11 @@
 	<?php
                  
                  echo $this->Html->link(
-                        h($project['Category']['Project']['name']),
+                        h($project['name']),
                         
                         array(
                                 'controller' => 'projects', 'action' => 'view', 
-                                $project['Project']['id']
+                                $project['id']
                         )
                 ); ?>	
 	<ul>
