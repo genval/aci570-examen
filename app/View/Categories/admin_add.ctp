@@ -10,10 +10,10 @@
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Acción'); ?></h3>
+	<h3><?php echo __('acciones'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Categories'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Lista Categorias'), array('action' => 'index')); ?></li>
 			
 	</ul>
 </div>
